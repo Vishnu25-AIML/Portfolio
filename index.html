@@ -4,74 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
+    <!-- <link rel="stylesheet" href="Style.css"> -->
+    <style>
+        #main{
+            text-align: center;
+            color:#14FFEC;
+        }
+
+        img#Photo{
+            border-radius: 60%;
+            border:5px solid #28b6b8;
+            position: relative;
+        }
+
+        body{
+            background-color: #212121;
+            color: white;
+        }
+
+        .box{
+            background-color: #0D7377;
+            border: 5px solid #44b1a8;
+            border-radius: 5%;
+            padding: 20px;
+            margin-left:15%;
+            margin-right:15%;
+            margin-bottom: 1%;
+        }
+
+        .box h2{
+            color: #14FFEC;
+            font-weight:bolder;
+        }
+
+    </style>
 </head>
 <body>
-    <hr />
-    <hr />
-    <h1>M. Vishnu Vardhan Reddy</h1>
-    <hr />
-    <hr />
-    <img src="./Photo.jpg" height="200" alt="Profile photo"/>
-    <hr />
-    <hr />
-    <h2>PROFILE</h2>
-        <p> Passionate Software Developer, eager to embark on a full-time role in Machine
-            Learning or Data Science <br/>within an innovative company.I am committed to
-            leveraging my programming expertise to drive the organization's success<br/> and
+    <div id="main">
+        <h1 id="Name">M. Vishnu Vardhan Reddy</h1>
+        <img id="Photo" src="./Photo.jpg" height="230" width="180" alt="Profile photo" style="margin-bottom: 2%;"/>
+    </div>
+    
+    <div id="Profile" class="box">
+        <h2>PROFILE</h2>
+        <p style="margin-left: 3%;"> Passionate Software Developer, eager to embark on a full-time role in Machine
+            Learning or Data Science within an innovative company.I am committed to
+            leveraging my programming expertise to drive the organization's success and
             advance cutting-edge technologies.</p>
-    <hr />
-    <hr />
-    <h2>EDUCATION</h2>
-    <ul>
-        <li>
-            <h3>10 th standard (Sri Chaithanya techno school)</h3>
-            <p>2018-19 (Percentage: 91%)</p>
-            
-        </li>
-        <li>
-            <h3>12 th standard (Reva independent pu college)</h3>
-            <p>2020-21 (Percentage: 94.5%)</p>
-        </li>
-        <li>
-            <h3>B.E - AIML (BMS Institute of Technology & Management)</h3>
-            <p>2021-25 (CGPA: 9.23)</p>
-        </li>
-    </ul>
-    <hr />
-    <hr />
-    <h2>PROJECTS</h2>
-        <ol>
+    </div>
+    
+    <div id="Educations" class="box">
+        <h2>EDUCATION</h2>
+        <ul style="margin-left: 3%;">
+            <li>
+                <h3>10 th standard (Sri Chaithanya techno school)</h3>
+                <p>2018-19 (Percentage: 91%)</p>
+                
+            </li>
+            <li>
+                <h3>12 th standard (Reva independent pu college)</h3>
+                <p>2020-21 (Percentage: 94.5%)</p>
+            </li>
+            <li>
+                <h3>B.E - AIML (BMS Institute of Technology & Management)</h3>
+                <p>2021-25 (CGPA: 9.23)</p>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="Projects" class="box">
+        <h2>PROJECTS</h2>
+        <ol style="margin-left: 3%;">
             <li>
                 <h3>SMART MAZE SOLVER USING REINFORCEMENT LEARNING</h3>
-                <p>We developed a Q-learning-based system to train an agent to solve virtual mazes.<br/>
+                <p>We developed a Q-learning-based system to train an agent to solve virtual mazes.
                     We then transferred the knowledge to a physical robot, enabling it to autonomously
                     navigate and solve real-world mazes.
                 </p>
-                <img src="./maze_solution.gif" height="180"/>
+                <img src="./maze_solution.gif" height="180" style="margin-left: 20%;"/>
                 <img src="./PMaze.gif" height="180"/>
             </li>
             <hr />
             <li><h3>LINE FOLLOWING ROBOT USING OPENCV AND RASPBERRY PI</h3>
                 <p>Developed a Python program using OpenCV to help a robot navigate by detecting
-                    path edges in video footage.<br /> Enhanced its navigation by programming color
+                    path edges in video footage. Enhanced its navigation by programming color
                     recognition for red and green, enabling it to turn right and left.
                 </p>
-                <img src="./LFR.gif" height="180" width="140"/>
+                <img src="./LFR.gif" height="180" width="140" style="margin-left: 35%; margin-right:25%;"/>
             </li>
             <hr />
             <li><h3>MINI VIRTUAL ASSISTANCE USING SIGN-LANGUAGE</h3>
                 <p>Developed a virtual assistant using deep learning and computer vision for gesture
-                    recognition. <br />Enabled web navigation, tab management, and custom operations
-                    through sign language.<br/>Created a user-friendly interface with visual feedback for
+                    recognition.Enabled web navigation, tab management, and custom operations
+                    through sign language.Created a user-friendly interface with visual feedback for
                     sign and voice commands.                    
                 </p>
-                <img src="./MVA.gif" height="200"/>
+                <img src="./MVA.gif" height="200" style="margin-left: 25%;"/>
             </li>
         </ol>
-    <hr />
-    <hr />
-    <h2>INTERNSHIPS</h2>
-        <ul>
+    </div>
+    
+    <div id="Internships" class="box">
+        <h2>INTERNSHIPS</h2>
+        <ul style="margin-left: 3%;">
             <li><h3>ROBOTICS</h3>
                 <p>Comedkares Innovation Hub | Oct 2023 - Nov 2023<p>
             </li>
@@ -79,18 +114,19 @@
                 <p>ZetaCoding Innovative Solutions | Ongoing<p>
             </li>
         </ul>
-    <hr />
-    <hr />
-    <h2>SKILLS</h2>
-        <ul>
+    </div>
+
+    <div id="Skills" class="box">
+        <h2>SKILLS</h2>
+        <ul style="margin-left: 3%;">
             <li>C and C++</li>
             <li>Python Programming</li>
             <li>Machine Learning</li>
             <li>Deep Learning (Basic level)</li>
             <li>Internet of Things (Basic level)</li>
         </ul>
-    <hr />        
-    <hr />            
+    </div>
+                
     
 </body>
 </html>
